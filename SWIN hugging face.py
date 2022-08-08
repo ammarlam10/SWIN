@@ -5,13 +5,20 @@
 
 
 import datasets
+from transformers import AutoFeatureExtractor
+import torch
 
+
+import numpy as np
+from datasets import load_metric
 
 # In[2]:
 
 
 from datasets import load_dataset
+from transformers import SwinForImageClassification, Trainer, TrainingArguments
 
+from transformers import Trainer, TrainingArguments
 
 # In[3]:
 
@@ -99,7 +106,6 @@ print(labels)
 # In[16]:
 
 
-from transformers import AutoFeatureExtractor
 
 #loading the feature extractor
 model_name= "microsoft/swin-large-patch4-window12-384-in22k"
@@ -130,7 +136,6 @@ prepared_ds
 
 
 
-import torch
 
 def collate_fn(batch):
   #data collator
@@ -143,8 +148,6 @@ def collate_fn(batch):
 # In[20]:
 
 
-import numpy as np
-from datasets import load_metric
 
 metric = load_metric("accuracy")
 def compute_metrics(p):
@@ -155,7 +158,6 @@ def compute_metrics(p):
 # In[22]:
 
 
-from transformers import SwinForImageClassification, Trainer, TrainingArguments
 
 labels = ds['train'].features['label'].names
 
@@ -172,7 +174,6 @@ model = SwinForImageClassification.from_pretrained(
 # In[33]:
 
 
-from transformers import Trainer, TrainingArguments
 
 batch_size = 16
 # Defining training arguments (set push_to_hub to false if you don't want to upload it to HuggingFace's model hub)
