@@ -16,7 +16,7 @@ from datasets import load_dataset
 # In[3]:
 
 
-p ='/home/ammar/Desktop/LMU/ADL/data/DRG_huggingface'
+p ='/workspace/data-science-practical/SWIN/DRG_huggingface'
 
 
 # In[4]:
@@ -60,24 +60,24 @@ ds = load_dataset(p)
 # In[6]:
 
 
-ds
+print(ds)
 
 
 # In[8]:
 
 
-ds['train'][400]
+#ds['train'][400]
 
 
 # In[9]:
 
 
-ex = ds['train'][400]
-print(ex)
+#ex = ds['train'][400]
+#print(ex)
 
 # seeing the image
-image = ex['img']
-image.show()
+#image = ex['img']
+#image.show()
 
 
 # In[13]:
