@@ -23,7 +23,7 @@ from transformers import Trainer, TrainingArguments
 # In[3]:
 
 
-p ='/workspace/data-science-practical/SWIN/DRG_huggingface'
+p ='/workspace/ammar/SWIN/DRG_huggingface'
 
 
 # In[4]:
