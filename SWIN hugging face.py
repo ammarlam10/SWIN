@@ -5,7 +5,7 @@
 
 
 import os
-os.environ['WORLD_SIZE'] = 4
+os.environ['WORLD_SIZE'] = '4'
 
 
 import datasets
