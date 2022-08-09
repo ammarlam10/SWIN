@@ -4,7 +4,7 @@
 # In[1]:
 
 
-import logging_steps
+import os
 os.environ['WORLD_SIZE'] = 4
 
 
