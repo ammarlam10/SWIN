@@ -8,6 +8,7 @@ import os
 os.environ['WORLD_SIZE'] = '4'
 
 os.environ['MASTER_ADDR'] = 'localhost'
+os.environ['MASTER_PORT'] = '8000'
 
 
 
