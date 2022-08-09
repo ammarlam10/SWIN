@@ -7,6 +7,9 @@
 import os
 os.environ['WORLD_SIZE'] = '4'
 
+os.environ['MASTER_ADDR'] = 'localhost'
+
+
 
 import datasets
 from transformers import AutoFeatureExtractor
