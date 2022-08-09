@@ -4,6 +4,10 @@
 # In[1]:
 
 
+import logging_steps
+os.environ['WORLD_SIZE'] = 4
+
+
 import datasets
 from transformers import AutoFeatureExtractor
 import torch
