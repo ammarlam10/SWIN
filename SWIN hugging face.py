@@ -4,11 +4,11 @@
 # In[1]:
 
 
-import os
-os.environ['WORLD_SIZE'] = '4'
+#import os
+#os.environ['WORLD_SIZE'] = '4'
 
-os.environ['MASTER_ADDR'] = 'localhost'
-os.environ['MASTER_PORT'] = '5678'
+#os.environ['MASTER_ADDR'] = 'localhost'
+#os.environ['MASTER_PORT'] = '5678'
 
 
 
@@ -31,7 +31,7 @@ from transformers import Trainer, TrainingArguments
 # In[3]:
 
 
-p ='/workspace/ammar/SWIN/DRG_huggingface'
+p ='~/ammar/SWIN/DRG_huggingface'
 
 
 # In[4]:
