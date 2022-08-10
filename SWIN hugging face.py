@@ -31,8 +31,8 @@ from transformers import Trainer, TrainingArguments
 # In[3]:
 
 
-p ='~/ammar/SWIN/DRG_huggingface/'
-
+#p ='~/ammar/SWIN/DRG_huggingface/'
+p ='/dss/dsshome1/lxc0C/ra49bid2/ammar/SWIN/DRG_huggingface'
 
 # In[4]:
 
