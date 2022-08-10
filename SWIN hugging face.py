@@ -31,7 +31,7 @@ from transformers import Trainer, TrainingArguments
 # In[3]:
 
 
-p ='~/ammar/SWIN/DRG_huggingface/DRG_huggingface.py'
+p ='~/ammar/SWIN/DRG_huggingface/.'
 
 
 # In[4]:
