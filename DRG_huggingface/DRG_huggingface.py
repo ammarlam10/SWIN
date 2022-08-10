@@ -100,8 +100,8 @@ class DRG(datasets.GeneratorBasedBuilder):
             #imgfolder = '/home/ammar/Desktop/LMU/ADL/data/C. Diabetic Retinopathy Grading/1. Original Images/a. Training Set'
             #csv_path = '/home/ammar/Desktop/LMU/ADL/data/C. Diabetic Retinopathy Grading/2. Groundtruths/a. DRAC2022_ Diabetic Retinopathy Grading_Training Labels.csv'
             
-            imgfolder = '/workspace/DATA/C. Diabetic Retinopathy Grading/1. Original Images/a. Training Set'
-            csv_path = '/workspace/DATA/C. Diabetic Retinopathy Grading/2. Groundtruths/a. DRAC2022_ Diabetic Retinopathy Grading_Training Labels.csv'
+            imgfolder = '~/DATA2/C. Diabetic Retinopathy Grading/1. Original Images/a. Training Set'
+            csv_path = '~/DATA2/C. Diabetic Retinopathy Grading/2. Groundtruths/a. DRAC2022_ Diabetic Retinopathy Grading_Training Labels.csv'
             
 
             df= pd.read_csv(csv_path)
