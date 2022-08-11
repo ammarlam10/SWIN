@@ -188,6 +188,7 @@ batch_size = 16
 training_args = TrainingArguments(
     f"swin-finetuned-DRG",
     remove_unused_columns=False,
+    _n_gpu=2,
     evaluation_strategy = "epoch",
     save_strategy = "epoch",
     learning_rate=5e-5,
